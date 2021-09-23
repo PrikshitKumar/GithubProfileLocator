@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Github Profile Locator</string>
+    <string name="hint_Text">Enter Github Username</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#293e49"
+    tools:context=".activity.Activity2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/id_userLogo"
+        android:src="@drawable/github_logo"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_name"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/id_userLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_title"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/id_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/id_recyclerView"
+        android:background="@drawable/recyclerview_background"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:paddingTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_noReposTxt"
+        android:text="No Repositries Found"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/id_recyclerView"
+        app:layout_constraintBottom_toBottomOf="@+id/id_recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/id_recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/id_recyclerView"
+        android:theme="@style/Theme.AppCompat.Light"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/id_progressBarLayout"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/recyclerview_background"
+        app:layout_constraintTop_toTopOf="@+id/id_recyclerView"
+        app:layout_constraintBottom_toBottomOf="@+id/id_recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/id_recyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/id_recyclerView"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_progressBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
