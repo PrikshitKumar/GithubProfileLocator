@@ -6,3 +6,5 @@ If entered username exists then, you can see all his/her repos in this applicati
 If you want to open any repository, then click on the Repo Name. And, complete repository will opened without giving any error.
 
 # Demo
+https://user-images.githubusercontent.com/64913497/134515932-54e3cd9c-5504-4289-bca5-e89484f07beb.mp4
+
